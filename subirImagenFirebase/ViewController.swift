@@ -35,6 +35,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
         
         return b
     }()
+    
+    let myActivityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
 
     override func viewDidLoad() {
         
@@ -42,6 +44,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
         view.backgroundColor = UIColor.white
         view.addSubview(uploadImage)
         view.addSubview(botonEnviar)
+        view.addSubview(myActivityIndicator)
         
         uploadImage.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         uploadImage.topAnchor.constraint(equalTo: view.topAnchor,constant: 100).isActive = true
@@ -52,6 +55,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
         botonEnviar.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         botonEnviar.heightAnchor.constraint(equalToConstant: 50).isActive = true
         botonEnviar.widthAnchor.constraint(equalToConstant: 300).isActive = true
+        
+        myActivityIndicator.translatesAutoresizingMaskIntoConstraints = false
+        myActivityIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        myActivityIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -100).isActive = true
+        
         
         ref = Database.database().reference() //inicializo mi referencia
         
@@ -67,6 +75,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
     
     @objc func saveImage(){
         let id = ref.childByAutoId().key
+        self.myActivityIndicator.startAnimating()
+        
         let storage = Storage.storage().reference() //referencia al storage
         let nombreImagen = UUID()
         let directorio = storage.child("imagenes/\(nombreImagen)")
@@ -82,6 +92,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate,UINaviga
                 return
             }
             print("Se subio la imagen")
+            self.myActivityIndicator.stopAnimating()
         }
         let values = ["nombre": String(describing: directorio)]
         ref.child("imagenes").child(id).setValue(values)
