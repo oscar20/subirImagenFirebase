@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		398F79172BEE4F2D66CF8C71 /* Pods_subirImagenFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE311C01835688EFBCE8C65 /* Pods_subirImagenFirebase.framework */; };
 		3DC7C90620A7364800525F18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7C90520A7364800525F18 /* AppDelegate.swift */; };
 		3DC7C90820A7364800525F18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC7C90720A7364800525F18 /* ViewController.swift */; };
 		3DC7C90B20A7364800525F18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC7C90920A7364800525F18 /* Main.storyboard */; };
 		3DC7C90D20A7364900525F18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC7C90C20A7364900525F18 /* Assets.xcassets */; };
 		3DC7C91020A7364900525F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC7C90E20A7364900525F18 /* LaunchScreen.storyboard */; };
+		3DC7C91820A7378700525F18 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3DC7C91720A7378700525F18 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C84EB9F4E05BAB8E9D49924 /* Pods-subirImagenFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-subirImagenFirebase.release.xcconfig"; path = "Pods/Target Support Files/Pods-subirImagenFirebase/Pods-subirImagenFirebase.release.xcconfig"; sourceTree = "<group>"; };
 		3DC7C90220A7364800525F18 /* subirImagenFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = subirImagenFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC7C90520A7364800525F18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DC7C90720A7364800525F18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		3DC7C90C20A7364900525F18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DC7C90F20A7364900525F18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DC7C91120A7364900525F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DC7C91720A7378700525F18 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DC6945BAD2D68CFC3D30453F /* Pods-subirImagenFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-subirImagenFirebase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-subirImagenFirebase/Pods-subirImagenFirebase.debug.xcconfig"; sourceTree = "<group>"; };
+		FFE311C01835688EFBCE8C65 /* Pods_subirImagenFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_subirImagenFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				398F79172BEE4F2D66CF8C71 /* Pods_subirImagenFirebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33B74D3AF6024A3C7635A475 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC6945BAD2D68CFC3D30453F /* Pods-subirImagenFirebase.debug.xcconfig */,
+				0C84EB9F4E05BAB8E9D49924 /* Pods-subirImagenFirebase.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3DC7C8F920A7364800525F18 = {
 			isa = PBXGroup;
 			children = (
 				3DC7C90420A7364800525F18 /* subirImagenFirebase */,
 				3DC7C90320A7364800525F18 /* Products */,
+				33B74D3AF6024A3C7635A475 /* Pods */,
+				BDC20F6D626EF8AB12216B4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +78,17 @@
 				3DC7C90C20A7364900525F18 /* Assets.xcassets */,
 				3DC7C90E20A7364900525F18 /* LaunchScreen.storyboard */,
 				3DC7C91120A7364900525F18 /* Info.plist */,
+				3DC7C91720A7378700525F18 /* GoogleService-Info.plist */,
 			);
 			path = subirImagenFirebase;
+			sourceTree = "<group>";
+		};
+		BDC20F6D626EF8AB12216B4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFE311C01835688EFBCE8C65 /* Pods_subirImagenFirebase.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DC7C91420A7364900525F18 /* Build configuration list for PBXNativeTarget "subirImagenFirebase" */;
 			buildPhases = (
+				610CBC97132C7D5A3014CB28 /* [CP] Check Pods Manifest.lock */,
 				3DC7C8FE20A7364800525F18 /* Sources */,
 				3DC7C8FF20A7364800525F18 /* Frameworks */,
 				3DC7C90020A7364800525F18 /* Resources */,
+				C0194FFC5F184FB3054DA89B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +152,58 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DC7C91020A7364900525F18 /* LaunchScreen.storyboard in Resources */,
+				3DC7C91820A7378700525F18 /* GoogleService-Info.plist in Resources */,
 				3DC7C90D20A7364900525F18 /* Assets.xcassets in Resources */,
 				3DC7C90B20A7364800525F18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		610CBC97132C7D5A3014CB28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-subirImagenFirebase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0194FFC5F184FB3054DA89B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-subirImagenFirebase/Pods-subirImagenFirebase-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-subirImagenFirebase/Pods-subirImagenFirebase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3DC7C8FE20A7364800525F18 /* Sources */ = {
@@ -278,6 +353,7 @@
 		};
 		3DC7C91520A7364900525F18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC6945BAD2D68CFC3D30453F /* Pods-subirImagenFirebase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +371,7 @@
 		};
 		3DC7C91620A7364900525F18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C84EB9F4E05BAB8E9D49924 /* Pods-subirImagenFirebase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
